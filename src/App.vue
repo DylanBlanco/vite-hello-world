@@ -1,18 +1,21 @@
 <script>
-// my-component.js
 export default {
   data() {
     return {
-      message: 'Template Vite + VUE'
+      message: 'Hello Wolrd'
     }
   },
+  methods: {
+    click() {
+      alert('hello click');
+    }
+  }
 }
 </script>
 
 <template>
-  <div>
-    <h1>{{ message }}</h1>
-  </div>
+  <h1>{{message}}</h1>
+  <button @click="click()">Cliccami</button>
 </template>
 
 <style scoped>
